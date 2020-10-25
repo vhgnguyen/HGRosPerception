@@ -1,0 +1,13 @@
+{
+    "editor.fontSize": 10,
+    "C_Cpp.intelliSenseEngineFallback": "Disabled",
+    "files.associations": {
+        "dense": "cpp",
+        "core": "cpp"
+    },
+    "python.autoComplete.extraPaths": [
+        "/home/tae/catkin_ws/devel/lib/python2.7/dist-packages",
+        "/opt/ros/melodic/lib/python2.7/dist-packages"
+    ],
+    "C_Cpp.errorSquiggles": "Disabled"
+}
