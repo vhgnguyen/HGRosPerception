@@ -1,0 +1,29 @@
+{
+    "terminal.integrated.shellArgs.linux": [
+        "-l",
+        "-i"
+    ],
+    "editor.fontSize": 10,
+    "editor.selectionHighlight": true,
+    "C_Cpp.intelliSenseEngineFallback": "Enabled",
+    "files.associations": {
+        "dense": "cpp",
+        "core": "cpp",
+        "array": "cpp",
+        "string_view": "cpp",
+        "bitset": "cpp",
+        "random": "cpp",
+        "memory": "cpp",
+        "optional": "cpp"
+    },
+    "python.autoComplete.extraPaths": [
+        "/home/tae/catkin_ws/devel/lib/python2.7/dist-packages",
+        "/opt/ros/melodic/lib/python2.7/dist-packages"
+    ],
+    "C_Cpp.errorSquiggles": "Disabled",
+    "ros.distro": "melodic",
+    "fileheader.Author": "Vo Hoang Nguyen",
+    "fileheader.LastModifiedBy": "Vo Hoang Nguyen",
+    "editor.formatOnSave": true,
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}"
+}
