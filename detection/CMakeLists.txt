@@ -49,12 +49,12 @@ include_directories( ${OpenCV_INCLUDE_DIR} )
 ##   * uncomment the generate_messages entry below
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
-## Generate messages in the 'msg' folder
-# add_message_files(
-#   FILES
-#   Message1.msg
-#   Message2.msg
-# )
+# Generate messages in the 'msg' folder
+add_message_files(
+  FILES
+  Object.msg
+  ObjectArray.msg
+)
 
 ## Generate services in the 'srv' folder
 # add_service_files(
@@ -147,6 +147,14 @@ target_link_libraries(
 # add_executable(detection src/detection_node.cpp)
 # target_link_libraries( detection ${PROJECT_NAME}_lib)
 
+# Detection nodelet
+add_library( detection_nodelet src/detection_nodelet.cpp )
+target_link_libraries( detection_nodelet ${PROJECT_NAME}_lib )
+
+# Detection node
+add_executable( detection src/detection_node.cpp )
+target_link_libraries( detection ${PROJECT_NAME}_lib)
+
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
@@ -193,11 +201,10 @@ target_link_libraries(
 # )
 
 ## Mark other files for installation (e.g. launch and bag files, etc.)
-# install(FILES
-#   # myfile1
-#   # myfile2
-#   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-# )
+install(FILES
+  nodelets.xml
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)
 
 #############
 ## Testing ##

@@ -22,7 +22,6 @@
   </node>
 
   <!-- Launch rviz for visualization -->
-  <node pkg="rviz" type="rviz" name="my_rviz"
-	args="-d $(find sensors)config/rviz_config_sensor.rviz"/>
-  
+  <node pkg="rviz" type="rviz" name="my_rviz" args="-d $(find sensors)config/rviz_config_sensor.rviz"/>
+
 </launch>

@@ -10,8 +10,7 @@ public:
   ~SensorSetupNodelet() {}
 
 private:
-  virtual void onInit()
-  {
+  virtual void onInit() {
     sensor_setup_.reset(
       new SensorSetup(getNodeHandle(), getPrivateNodeHandle()));
   }
