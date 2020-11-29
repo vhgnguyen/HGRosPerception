@@ -7,11 +7,8 @@ using namespace Eigen;
 using namespace geometry_msgs;
 using namespace helper;
 
-<<<<<<< HEAD
 # define M_PI_180 = 0.01745329251 /* pi/180 */
 
-=======
->>>>>>> devDetection
 class Tools{
 
 public:
@@ -47,11 +44,4 @@ private:
 	MatrixXf TRANS_CAM_TO_RECTCAM;
 	MatrixXf TRANS_RECTCAM_TO_IMAGE;
 
-<<<<<<< HEAD
 };
-
-
-
-=======
-};
->>>>>>> devDetection
