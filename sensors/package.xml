@@ -1,0 +1,40 @@
+<package format="2">
+  <name>sensors</name>
+  <version>0.0.1</version>
+  <description>
+    Sensor package with stereo vision, depth completion and ground estimation
+  </description>
+  <author>Simon Appel</author>
+  <maintainer email="simonappel62@gmail.com">Simon Appel</maintainer>
+  <license>MIT</license>
+  <url>https://github.com/appinho/SARosPerceptionKitti</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>dynamic_reconfigure</build_depend>
+  <build_depend>message_runtime</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>rosgraph_msgs</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>image_geometry</build_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>pcl_ros</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>helper</build_depend>
+
+  <exec_depend>dynamic_reconfigure</exec_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <exec_depend>message_generation</exec_depend>
+  <exec_depend>rosgraph_msgs</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>image_geometry</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>pcl_ros</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>helper</exec_depend>
+
+  <test_depend>rostest</test_depend>
+</package>

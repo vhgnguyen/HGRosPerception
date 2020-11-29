@@ -1,0 +1,47 @@
+sensor_frame:
+  z: -1.73
+  z_min: -2.4
+
+semantic:
+  edge_detection:
+    perform: false
+    min: 5
+    max: 120
+    kernel: 3
+
+stereo_vision:
+  enable: true
+  num_disp: 3
+  block_size: 12
+  max_depth: 30.0
+
+depth_completion:
+  enable: true
+  kernel:
+    diamond: 1
+    full: 1
+    closure: 1
+    fill: 1
+    median: 1
+  blurring:
+    method: 0
+    kernel: 1
+    sigma: 4.5
+
+pointcloud_fusion:
+  use_velodyne: true
+  use_stereo: true
+
+ground_extraction:
+  polar_grid:
+    segments: 60
+    bins: 57
+    range:
+      min: 3.0
+      max: 60.0
+    cell:
+      max_height: 0.15
+  ransac:
+    tolerance: 0.2
+    iterations: 50
+
