@@ -12,7 +12,7 @@ This repo is cloned from [SARosPerceptionKitti](https://github.com/appinho/SARos
 
 # Setup
 
-Store the rosbag file of KITTI data set as follows:
+Store the rosbag file with 4 digit number name of KITTI data set as follows:
 ```
     ~                                        # Home directory
     └── catkin_ws                            # Catkin workspace
@@ -22,9 +22,9 @@ Store the rosbag file of KITTI data set as follows:
                     └── rosbags              # ROSbag directory
                         ├── 0000.bag         # ROSbag file
                         ... 
-                        └── 0013.bag         # ROSbag file
+                        └── xxxx.bag         # ROSbag file
 ```
-or change the directory folder in all launch files `${node_name}/${node_name}.launch`.
+or change the directory folder in all launch files `NODE_NAME/NODE_NAME.launch`.
 
 1) Install [ROS](http://wiki.ros.org/Installation/Ubuntu) and create a [catkin workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace) in your home directory:  
 
@@ -36,11 +36,22 @@ mkdir -p ~/catkin_ws/src
 
 ```
 cd ~/catkin_ws/src
-git clone --recurse-submodules https://github.com/appinho/SARosPerceptionKitti.git
+git clone --recurse-submodules https://github.com/vhgnguyen/HGRosPerception.git
 cd ~/catkin_ws
 catkin_make
 source devel/setup.bash
 ```
 
 3) [Download a preprocessed scenario](https://drive.google.com/drive/folders/1vHpkoC78fPXT64-VFL1H5Mm1bdukK5Qz?usp=sharing). Unzip and store under the folder in [this instruction](#setup)
+
+## Usage
+
+Launch ROS node to perform and visualize:
+```
+source devel/setup.bash
+roslaunch detection detection.launch home_dir:=/home/USER_NAME scenario:=ROSBAG_NUMBER
+```
+    * Default parameters for RViz visualization:
+        * speed := 0.2          # replay with 20% of its speed
+        * delay := 3            # 3 second delay
 
