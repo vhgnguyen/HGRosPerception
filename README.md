@@ -44,8 +44,8 @@ source devel/setup.bash
 
 3) [Download a preprocessed scenario](https://drive.google.com/drive/folders/1vHpkoC78fPXT64-VFL1H5Mm1bdukK5Qz?usp=sharing). Unzip and store under the folder in [this instruction](#setup).
 
-    * Note
-        The semantic segmentated images are already included in the rosbag files. The camera data is segmentated by pre-trained Deep Neural Network [Google's Deeplab on KITTI dataset](https://github.com/hiwad-aziz/kitti_deeplab).
+* Note
+    The semantic segmentated images are already included in the rosbag files. The camera data is segmentated by pre-trained Deep Neural Network [Google's Deeplab on KITTI dataset](https://github.com/hiwad-aziz/kitti_deeplab).
 
 ## Usage
 Launch ROS node to perform and visualize:
@@ -56,6 +56,7 @@ roslaunch detection detection.launch home_dir:=/home/USER_NAME scenario:=ROSBAG_
 ```
 
 * Default parameters for RViz visualization:
-    * speed := 0.2          # replay with 20% of its speed
-    * delay := 3            # 3 second delay
-
+    ```
+    speed := 0.2          # replay with 20% of its speed
+    delay := 3            # 3 second delay
+    ```
