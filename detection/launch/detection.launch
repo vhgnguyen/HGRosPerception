@@ -5,10 +5,10 @@
     <arg name="scenario" default="0000"/>
 
     <!-- Choose replay speed -->
-    <arg name="speed" default="0.2"/>
+    <arg name="speed" default="0.1"/>
 
     <!-- Choose replay delay -->
-    <arg name="delay" default="3.0"/>
+    <arg name="delay" default="2.0"/>
 
     <!-- Play rosbag file -->
     <node pkg="rosbag" type="play" name="player" args="-r $(arg speed) -d $(arg delay) $(find data)/rosbags/$(arg scenario).bag"/>
