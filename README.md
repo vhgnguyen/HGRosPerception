@@ -7,7 +7,7 @@ This repo is cloned from [SARosPerceptionKitti](https://github.com/appinho/SARos
 
 ## Demo
 <p align="center">
-  <img src="doc/images/semantic.gif">
+  <img src="doc/images/HGRosPerception-detection.gif">
 </p>
 
 # Setup
@@ -24,7 +24,7 @@ Store the rosbag file of KITTI data set as follows:
                         ... 
                         └── 0013.bag         # ROSbag file
 ```
-or change the directory folder in all launch files `.${node_name}/${node_name}.launch`.
+or change the directory folder in all launch files `${node_name}/${node_name}.launch`.
 
 1) Install [ROS](http://wiki.ros.org/Installation/Ubuntu) and create a [catkin workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace) in your home directory:  
 
