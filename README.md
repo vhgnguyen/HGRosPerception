@@ -7,7 +7,7 @@ This repo is cloned from [SARosPerceptionKitti](https://github.com/appinho/SARos
 
 ## Demo
 <p align="center">
-  <img src="./doc/images/semantic.gif">
+  <img src="doc/images/semantic.gif">
 </p>
 
 # Setup
