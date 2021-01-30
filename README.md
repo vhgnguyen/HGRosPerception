@@ -3,7 +3,7 @@
 ROS package for segmentation based object detection of the KITTI dataset
 ==========
 
-This repo is cloned from [SARosPerceptionKitti](https://github.com/appinho/SARosPerceptionKitti) for object detection of the KITTI dataset.
+This repo is implemented based on the reference of [SARosPerceptionKitti](https://github.com/appinho/SARosPerceptionKitti) for object detection of the KITTI dataset.
 
 ## Demo
 <p align="center">
